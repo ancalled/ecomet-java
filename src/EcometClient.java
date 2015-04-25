@@ -151,8 +151,6 @@ public class EcometClient extends WebSocketClient {
         }
     }
 
-
-
     public static void main(String[] args) throws URISyntaxException, InterruptedException, IOException {
 
         String login = "guest";
