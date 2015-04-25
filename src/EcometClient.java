@@ -152,15 +152,8 @@ public class EcometClient extends WebSocketClient {
     }
 
 
-    public static void main(String[] args) {
-//        String resp = "{\"id\":2,\"type\":\"ok\",\"result\":\"ok\"}";
-        String resp = "{\"id\":\"1\",\"type\":\"ok\",\"result\":{\"oper\":\"edit\",\"oid\":\"{46,96}\",\"fields\":{\"in1_value\":\"1.03506849472588484673e+01\",\"in2_value\":\"9.69080289187478882695e+00\"}}}";
-        Map<String, String> map = parseJsonPlain(resp);
 
-        map.entrySet().forEach(e -> System.out.println(e.getKey() + ": " + e.getValue()));
-    }
-
-    public static void main1(String[] args) throws URISyntaxException, InterruptedException, IOException {
+    public static void main(String[] args) throws URISyntaxException, InterruptedException, IOException {
 
         String login = "guest";
         String pass = "guest";
@@ -180,8 +173,6 @@ public class EcometClient extends WebSocketClient {
         }
 
 
-//        {"id":"4","type":"ok","result":{"oper":"create","oid":"{46,96}","fields":{"in1_value":"1.03475709044123060920e+01","in2_value":"9.69691325704347839576e+00"}}}
-//        {"id":4,"type":"ok","result":"ok"}
 
 
     }
